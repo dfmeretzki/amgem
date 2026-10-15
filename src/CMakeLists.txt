@@ -21,5 +21,6 @@ target_link_libraries(amgem_lib
     PRIVATE
         GSL::gsl
         GSL::gslcblas
+        amgem_gmsh
         segyio
 )

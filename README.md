@@ -19,10 +19,12 @@ The output background mesh file is passed directly into a Gmsh `.geo` script to 
 
 | Dependency | Version | Notes |
 |---|---|---|
-| CMake | ≥ 3.25 | |
+| CMake | ≥ 3.28 |  |
 | C compiler | C23 | GCC / Clang |
+| C++ compiler | C++17 | Required to build Gmsh's core |
 | segyio | 1.9.14 | Included as a Git submodule |
 | GNU Scientific Library (gsl) | ≥ 2.0 | |
+| Gmsh | Pinned development commit | Fetched and built automatically |
 
 
 Install GSL on Debian/Ubuntu:

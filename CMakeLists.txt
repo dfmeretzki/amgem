@@ -1,8 +1,10 @@
-cmake_minimum_required(VERSION 3.25)
-project(AMGEM LANGUAGES C)
+cmake_minimum_required(VERSION 3.28)
+project(AMGEM LANGUAGES C CXX)
 
 # GNU Scientific Library
 find_package(GSL 2.0 REQUIRED)
+
+include(cmake/Gmsh.cmake)
 
 # segyio library
 set(BUILD_BIN OFF CACHE BOOL "Build segyio applications" FORCE)
